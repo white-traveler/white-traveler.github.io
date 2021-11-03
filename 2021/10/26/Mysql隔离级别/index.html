@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MySQL," />
 
 
 
@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="无盐值咸鱼的博客">
-<meta property="og:url" content="https://white-traveler.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
+<meta name="description" content="Mysql隔离级别时间线a进入事务， a读取      结果1 b进入事务， b进行update操作 a读取      结果2 b进行update commit操作  a读取      结果3 1 read uncommited  未提交可读​    a可读取b未提交结果 1 !&#x3D; 2&#x3D;3  2,3为操作后结果 ​    会出现幻读，脏读，不可重复读 2 read commited  已提交可读（">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mysql隔离级别">
+<meta property="og:url" content="https://white-traveler.github.io/2021/10/26/Mysql%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/index.html">
 <meta property="og:site_name" content="无盐值咸鱼的博客">
+<meta property="og:description" content="Mysql隔离级别时间线a进入事务， a读取      结果1 b进入事务， b进行update操作 a读取      结果2 b进行update commit操作  a读取      结果3 1 read uncommited  未提交可读​    a可读取b未提交结果 1 !&#x3D; 2&#x3D;3  2,3为操作后结果 ​    会出现幻读，脏读，不可重复读 2 read commited  已提交可读（">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-10-26T08:00:29.907Z">
+<meta property="article:modified_time" content="2021-10-26T08:05:37.435Z">
 <meta property="article:author" content="SYW">
-<meta property="article:tag" content="Java,JavaScript,SpringBoot,MySQL">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://white-traveler.github.io/categories/数据库/"/>
+  <link rel="canonical" href="https://white-traveler.github.io/2021/10/26/Mysql隔离级别/"/>
 
 
 
 
 
-  <title>分类: 数据库 | 无盐值咸鱼的博客</title>
+  <title>Mysql隔离级别 | 无盐值咸鱼的博客</title>
   
 
 
@@ -141,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,55 +239,231 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>数据库<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://white-traveler.github.io/2021/10/26/Mysql%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="无盐值咸鱼的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2021/10/24/%E5%BF%AB%E9%80%9F%E8%8C%83%E5%BC%8F%E5%88%A4%E6%96%AD/" itemprop="url">
-              
-                <span itemprop="name">快速范式判断</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Mysql隔离级别</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-10-24T17:56:42+08:00"
-              content="2021-10-24" >
-          10-24
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-26T16:00:29+08:00">
+                2021-10-26
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Mysql隔离级别"><a href="#Mysql隔离级别" class="headerlink" title="Mysql隔离级别"></a>Mysql隔离级别</h2><h3 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h3><p>a进入事务，</p>
+<p>a读取      结果1</p>
+<p>b进入事务，</p>
+<p>b进行update操作</p>
+<p>a读取      结果2</p>
+<p>b进行update commit操作 </p>
+<p>a读取      结果3</p>
+<h3 id="1-read-uncommited-未提交可读"><a href="#1-read-uncommited-未提交可读" class="headerlink" title="1 read uncommited  未提交可读"></a>1 read uncommited  未提交可读</h3><p>​    a可读取b未提交结果 1 != 2=3  2,3为操作后结果</p>
+<p>​    会出现幻读，脏读，不可重复读</p>
+<h3 id="2-read-commited-已提交可读（SQL-Server的默认级别）"><a href="#2-read-commited-已提交可读（SQL-Server的默认级别）" class="headerlink" title="2 read commited  已提交可读（SQL Server的默认级别）"></a>2 read commited  已提交可读（SQL Server的默认级别）</h3><p>​    a只能读取b提交后结果  1 = 2 !=3 1,2为操作前 </p>
+<p>​    会出现幻读，不可重复读</p>
+<h3 id="3-repeatable-read-可重复读（默认级别）"><a href="#3-repeatable-read-可重复读（默认级别）" class="headerlink" title="3 repeatable read 可重复读（默认级别）"></a>3 repeatable read 可重复读（默认级别）</h3><p>​    固定读取当次进入事务时结果 1=2=3都为操作前 </p>
+<p>​    会出现幻读</p>
+<h3 id="4-serializable-串行"><a href="#4-serializable-串行" class="headerlink" title="4 serializable 串行"></a>4 serializable 串行</h3><p>​    b在进行update时被中断，在a rollback或commit后才可继续进行update   </p>
+<p>​    最安全的级别</p>
 
       
     </div>
+  
+    
+    
+    
+    <div>
+      
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
 
+      
+  </div>
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="" alt=" wechat" style="width: 200px; max-width: 100%;"/>
+    <div></div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.JPG" alt=" 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.JPG" alt=" 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/10/24/%E5%BF%AB%E9%80%9F%E8%8C%83%E5%BC%8F%E5%88%A4%E6%96%AD/" rel="next" title="快速范式判断">
+                <i class="fa fa-chevron-left"></i> 快速范式判断
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -291,6 +471,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -311,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -410,6 +603,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB"><span class="nav-number">1.</span> <span class="nav-text">Mysql隔离级别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E7%BA%BF"><span class="nav-number">1.1.</span> <span class="nav-text">时间线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-read-uncommited-%E6%9C%AA%E6%8F%90%E4%BA%A4%E5%8F%AF%E8%AF%BB"><span class="nav-number">1.2.</span> <span class="nav-text">1 read uncommited  未提交可读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-read-commited-%E5%B7%B2%E6%8F%90%E4%BA%A4%E5%8F%AF%E8%AF%BB%EF%BC%88SQL-Server%E7%9A%84%E9%BB%98%E8%AE%A4%E7%BA%A7%E5%88%AB%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">2 read commited  已提交可读（SQL Server的默认级别）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-repeatable-read-%E5%8F%AF%E9%87%8D%E5%A4%8D%E8%AF%BB%EF%BC%88%E9%BB%98%E8%AE%A4%E7%BA%A7%E5%88%AB%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">3 repeatable read 可重复读（默认级别）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-serializable-%E4%B8%B2%E8%A1%8C"><span class="nav-number">1.5.</span> <span class="nav-text">4 serializable 串行</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -553,6 +762,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
